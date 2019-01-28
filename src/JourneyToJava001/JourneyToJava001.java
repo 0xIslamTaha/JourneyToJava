@@ -1,6 +1,9 @@
+package JourneyToJava001;
+
 public class JourneyToJava001 {
 
     double addition(double x, double y){
+        subtraction(1,2);
         return x+y;
     }
 
@@ -29,6 +32,5 @@ public class JourneyToJava001 {
 
         JourneyToJava001 journey_obj = new JourneyToJava001();
         System.out.println(journey_obj.addition(10.1, 10.2));
-
     }
 }
