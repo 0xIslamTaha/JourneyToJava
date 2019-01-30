@@ -1,6 +1,6 @@
 package JourneyToJava001;
 
-public class JourneyToJava001 {
+public class Variables {
 
     double addition(double x, double y){
         subtraction(1,2);
@@ -30,7 +30,7 @@ public class JourneyToJava001 {
         System.out.println(char_v);
         System.out.println(str_v);
 
-        JourneyToJava001 journey_obj = new JourneyToJava001();
+        Variables journey_obj = new Variables();
         System.out.println(journey_obj.addition(10.1, 10.2));
     }
 }

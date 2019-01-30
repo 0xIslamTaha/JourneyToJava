@@ -1,7 +1,7 @@
-package JournreyToJava002;
+package JourneyToJava002;
 
 
-public class JourneyToJava002 {
+public class StringIfFor {
 
     public static void main(String[] args){
         String my_first_string = "My Journey to Java, by Islam Taha";
@@ -27,6 +27,17 @@ public class JourneyToJava002 {
             System.out.println(loop_problem.charAt(x));
             x++;
         }
+
+        String string_challenge = "0XIslam#Taha!";
+        for (int i=0; i<string_challenge.length(); i++){
+            if ('#' == string_challenge.charAt(i)){
+                System.out.println("Volla!!");
+                break;
+            }else{
+                System.out.println("Keep trying!");
+            }
+        }
+
 
     }
 
