@@ -14,7 +14,7 @@ class implementation implements Interface_ex{
     }
 }
 
-public class Interface{
+public class InterfaceTest{
     public static void main(String args[]) {
         implementation obj = new implementation();
         obj.implementME();
