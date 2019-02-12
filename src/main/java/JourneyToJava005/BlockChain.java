@@ -50,7 +50,14 @@ public class BlockChain{
             String data = String.format("My Journey to Java By 0xIslamTaha : part %d", i);
 
             Block block_obj = new Block(data, chain);
-            chain.add(block_obj);
+
+            if (chain.size() > 1) {
+                if (block_obj.preHash == chain.get(chain.size() - 1).curHash) {
+                    chain.add(block_obj);
+                }
+            } else{
+                chain.add(block_obj);
+            }
             System.out.println(chain.get(i).preHash);
             System.out.println(chain.get(i).data);
             System.out.println(chain.get(i).timeStamp);
